@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
 <img src="logo_bicycelo.png" alt="our logo" style="width:10%">
 
 
@@ -11,7 +12,7 @@
 
 <a href="textbox-.html"><img src="menu_icon.png"  align="right" style="width:6%; padding:5px"></a>
 <div align="right">
-<select name="Menu" >
+<select name="Menu" id="page-select" >
 <option>Home</option>
 <option>Projects</option>
 <option >SONGS</option>
@@ -156,4 +157,9 @@ Telegram Account Link:-<a href="https://t.me/YOUJUSTCHILL target="_blank" >https
     function sendthere(){
       window.location.href("https://linkedin.com/in/rudranil5")
     }
+  $(document).ready(function(){
+                    $("#page-select").click(function(){
+                                $("#page-select").slidedown(50)            
+                    })
+  })
   </script>
